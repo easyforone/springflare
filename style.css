@@ -6,7 +6,6 @@
 
 
 body {
-    margin: 20px;
     font-family: "source-han-sans-kr-variable",sans-serif;
     font-variation-settings: 'wght' 250;
     font-weight: 300;
@@ -43,8 +42,9 @@ mark {
     position: absolute;
     height: 100%;
     width: 300px;
+    padding: 20px;
     background-color: #c7d4a2;
-    /*border-right: 5px solid #c7d4a2;*/
+    
 }
 
 ul {
