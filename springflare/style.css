@@ -1,0 +1,128 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body {
+    margin: 20px;
+    font-family: "source-han-sans-kr-variable",sans-serif;
+    font-variation-settings: 'wght' 250;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    overflow:hidden}
+
+.title {
+    font-weight: 700;
+    
+}
+
+.title a{
+    text-decoration:none;
+    color: inherit;
+}
+
+.title a: hover, 
+.title a: visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.semibold {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+
+mark {
+    background-color: white;
+}
+.question {
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    background-color: #c7d4a2;
+    /*border-right: 5px solid #c7d4a2;*/
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    margin-left: -20px;
+    line-height: 20px;
+}
+
+ul li a {   
+    color:orange;             
+    text-decoration: none;        
+}
+
+
+
+ul li a:hover {
+    color: orange;                 
+    text-decoration: underline;    
+    text-decoration-color: orange;
+}
+
+
+.answer {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.content {
+    display: none;
+    height: 100%;
+  /*  overflow-y:auto;*/
+}
+
+.content:target {
+    display: block;
+}
+
+
+.img {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    bottom: 300px;
+    right: 50px;
+
+}
+
+.bottom-box {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  cursor: pointer;
+}
+
+   
+
+.popup {
+    position: absolute;
+    bottom: 50px;   /* 사각형 위쪽 또는 옆으로 조정 가능 */
+    right: 50px;
+    width: 230px;
+    padding: 10px;
+    background-color: white;
+    display: none;  /* 기본 숨김 */
+    z-index: 100;
+}
+
+#popup-toggle:checked + label + .popup {
+    display: block;
+}
+
+@media screen and (max-width: 704px) {
+
+}
